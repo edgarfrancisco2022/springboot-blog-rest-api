@@ -18,7 +18,7 @@ import java.util.Map;
 @ControllerAdvice //Handles exceptions globally
 public class GlobalExceptionHandler extends ResponseEntityExceptionHandler /*in order to handle @Valid responses*/ {
 
-    //Cómo es conecta exactamente todo?
+    //Cómo es que conecta exactamente todo?
 
     @ExceptionHandler(ResourceNotFoundException.class) //handles specific exceptions
     public ResponseEntity<ErrorDetails> handleResourceNotFoundException(ResourceNotFoundException exception,
